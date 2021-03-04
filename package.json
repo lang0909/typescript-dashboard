@@ -1,9 +1,10 @@
 {
-  "name": "typescript",
+  "name": "typescript-dashboard",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,27 @@
   "bugs": {
     "url": "https://github.com/lang0909/typescript-dashboard/issues"
   },
-  "homepage": "https://github.com/lang0909/typescript-dashboard#readme"
+  "homepage": "https://github.com/lang0909/typescript-dashboard#readme",
+  "dependencies": {
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@types/react-router-dom": "^5.1.7",
+    "axios": "^0.21.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@ant-design/icons": "^4.5.0",
+    "@types/antd": "^1.0.0",
+    "antd": "^4.13.0",
+    "css-loader": "^5.1.1",
+    "file-loader": "^6.2.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
